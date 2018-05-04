@@ -1,0 +1,22 @@
+{
+  "parser":"babel-eslint",
+  "plugins": [
+      "react-redux"
+  ],
+  "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "experimentalObjectRestSpread": true
+      }
+    },
+  "extends": ["airbnb","plugin:react-redux/recommended"],
+  "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "jsx-quotes": [2, "prefer-single"],
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"]
+  },
+  "env": {
+      "browser": true
+  }
+}
